@@ -1,0 +1,13 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    long long n,a,b,p,q,y,x,ans;
+    cin>>n>>a>>b>>p>>q;
+    x=((n/a)-n/(b*a))*p+(n/b)*q;
+    y=(n/a)*p+((n/b)-n/(a*b))*q;
+    if(x<y) ans=x;
+    else ans=y;
+    cout<<ans<<endl;
+}

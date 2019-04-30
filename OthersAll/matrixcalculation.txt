@@ -1,0 +1,28 @@
+write a c pogram two matrix A[10][10],B[10][10].
+To find the subtraction,multiplication,addition of these matrix. and
+To find the Transpose any Matrix, you need to Interchange Rows with Columns of Matrix 
+and Columns with Rows of the Matrix.
+The Main Diagonal Elements are the ones that occur from Top Left of Matrix Down To Bottom Right Corner.
+
+Input: matrix A[10][10],B[10][10],row & colum are an integer m,n 0<m<10,0<n<10,one string which is define  subtraction,multiplication,addition,Transpose
+     of this matrix. End of the input print End.
+Output: each element different by one space. if these matrix are order  c print Matrix with entered orders can't be multiplied/subtracted/addaed with each other.
+	others print Multipication, Subtraction, sumesion of A&B and Transpose of Matrix.
+Input:
+	Enter matrix A:
+	Row & colum: 3 3 
+	1 2 3
+        4 5 6
+        7 8 9
+	Enter matrix B:
+	Row & colum: 3 3 
+	1 2 3
+        4 5 6
+        7 8 9
+	multiplication
+	End
+
+Output: Multipication of A&B:
+	30 36 42
+	66 81 96
+	102 126 150

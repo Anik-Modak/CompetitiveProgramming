@@ -1,0 +1,2 @@
+//BinaryCode
+#include<bits/std

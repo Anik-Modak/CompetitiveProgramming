@@ -1,0 +1,120 @@
+				Assignment-2(file write)
+				========================
+#include<stdio.h>
+struct student{
+    char name[20][50];
+    char phone[50];
+}stdinfo;
+int main()
+{
+    int i,n;
+    FILE *fp;
+    printf("Enter Total student: ");
+    scanf("%d",n);
+    fp=(fopen("student1styear.txt","a"));
+    for(i=1;i<=n;i++){
+        scanf(" %[^\n]",stdinfo.name);
+        scanf("%s",stdinfo.phone);
+        fprintf(fp,"%s\n%s\n",stdinfo.name,stdinfo.name);
+    }
+    fclose(fp);
+}
+
+Mahadee Hasan Abir
+01739365220 
+Sheum Hossain
+01683612154
+Abdul Mozid
+01711180454
+Kawser Ali
+01521230814
+Julfiker Ali
+01521418572
+Ashik Ali
+01784038238
+MD. Al Mamun
+01760586982
+Devit Roy
+01762739522
+Mehedi Hasan
+01746244944
+Golam Rabbi
+01912165773
+Nadim Mahmud
+01781357254
+Sheikh Ahaduzzaman
+01753108681
+Anima Jebin Esha
+01703127558
+S.M Marzanul Hoque
+01515233164
+Mahabur Rahman Taj
+017
+Ebrahim Ali
+01723732026
+Shafquat Mahbub
+01521436021
+Nazmul Hasan
+01954210880
+Sanjida Urmi
+01724777402
+Arfujjaman Arif
+01765062164
+Manik Hosen
+01743612180
+Asif Himu
+01835921753 
+Shohan Pramanik
+01738609138 
+Maksudul Hasan
+01752750119 
+Farhan shahoria Shuvo
+01521414821 
+Rokib Ahmed Shadin
+01988930495
+MD Rubel Hossan
+01796132475
+Faiz Ahmed
+01631121017
+Nabila Ibnath Keya
+017......
+Nazmus Saadah Sakib
+01932664445
+Minhazul Abeden
+01766211372		
+Jalal Uddin Porash
+01743876167
+Arup  Sarkar			
+01948997796
+Sohanur Rahman
+01738978705
+Nahid Hasan Shuvo
+01795267575
+Nahid Hasan Raju	
+01706864892  
+Niaz Bin Siraj  
+01755931751
+Hasan Shaharia
+01755700454
+MD Nahid Hassan	
+01521416132 
+MD Al-Amin
+01754648715
+Anik Modak
+01745746115
+Rakib Sheikh		   
+01710386886
+Nafis Iqbal
+017
+Mahady Hasan Rony        
+01790897160
+Dalowar Hossan Apple	
+01706767234	
+MD Bipul Hossain		
+01521310184 
+Whalid Mahabub	 	     	
+01748774977  
+Iftekher Alam
+01982579533
+Tasrin Sultana Happy    
+01521478851 

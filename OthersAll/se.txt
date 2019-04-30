@@ -1,0 +1,30 @@
+Resource for Class Test
+ 
+[Textbook] Software Engineering A PRACTITIONER’S APPROACH EIGHTH EDITION by Roger S. Pressman
+ 
+Focus on PROBLEMS AND POINTS TO PONDER at the end of each chapter
+Class Test #1 (Date: April 10, 2018)
+CHAPTER 1 The Nature of Software
+CHAPTER 2 Software Engineering
+CHAPTER 3 Software Process Structure
+CHAPTER 4 Process Models
+ 
+Class Test #No Class Test will Cover these two chapters
+CHAPTER 5 Agile Development
+CHAPTER 6 Human Aspects of Software Engineering
+ 
+Class Test #2 (Date: April 15, 2018)
+CHAPTER 7 Principles That Guide Practice
+CHAPTER 8 Understanding Requirements
+CHAPTER 9 Requirements Modeling: Scenario-Based Methods
+CHAPTER 10 Requirements Modeling: Class-Based Methods
+CHAPTER 11 Requirements Modeling: Behavior, Patterns
+
+Class Test #3 (Date: April 22, 2018)
+CHAPTER 12 Architectural Design
+CHAPTER 13 Component-Level Design
+CHAPTER 14 User Interface Design
+CHAPTER 15 Pattern-Based Design
+ 
+Focus on PROBLEMS AND POINTS TO PONDER at the end of each chapter
+ 

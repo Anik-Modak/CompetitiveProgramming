@@ -1,0 +1,33 @@
+#include <iostream>
+
+using namespace std;
+
+
+int main()
+{
+   string s;
+   cin>>s;
+   
+   int h = (s[1]-'0')*10+(s[0]-'0');
+   int m = (s[3]-'0')*10+(s[4]-'0');
+   
+   cout<<h<<" "<<m<<endl;
+   int ans = 0;
+   l:if(h==23)
+   {
+       if(m<=32) ans += 32-m;
+       else ans += 60-m;
+   }
+   else if(h==6)
+   {
+       ans += 60+7;
+   }
+   else{
+       if(m<=h) ans +=h -m;
+       else{
+            h = (1+s[1]-'0')*10+(s[0]-'0');
+           goto l;
+       }
+   }
+   cout<<ans<<endl;
+}

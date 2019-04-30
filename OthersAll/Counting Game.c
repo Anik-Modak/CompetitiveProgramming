@@ -1,0 +1,64 @@
+#include<stdio.h>
+int main()
+{
+    long long i,j,k,l,n,m,p,q,r,a[10000000];
+    while(1)
+    {
+        scanf("%lld%lld%lld",&n,&m,&p);
+        if(n==0&&m==0&&p==0){
+            printf("");
+            break;
+        }
+        if(n<m)
+            printf("-1\n");
+        j=1;
+        k=0;
+        for(i=1;i<=n;i++)
+        {
+            a[i]=0;
+        }
+        l:for(i=1;i<n;i++)
+        {
+            l=1;
+            q=j;
+          while(q>0){
+            q=j/(10*l);
+            l=l*10;
+            r=q%10;
+            if(q==7||r==7||j%10==7||j%7==0){
+                a[i]=a[i]+1;
+                break;
+            }
+          }
+            if(i==m&&a[i]==p){
+                printf("%lld\n",j);
+                k=1;
+                break;
+            }
+            j++;
+        }
+        for(i=n;i>1;i--)
+        {
+            if(k==1)
+                break;
+            l=1;
+            q=j;
+           while(q>0){
+            q=j/(10*l);
+            l=l*10;
+            r=q%10;
+            if(q==7||r==7||j%10==7||j%7==0){
+                a[i]=a[i]+1;
+                break;
+            }
+         }
+            if(i==m&&a[i]==p){
+                printf("%lld\n",j);
+                break;
+            }
+            j++;
+            if(i==2) goto l;
+        }
+    }
+    return 0;
+}
