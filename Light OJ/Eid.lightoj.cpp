@@ -1,22 +1,35 @@
-//Anik_Modak
-#include<bits/stdc++.h>
-using namespace std;
+import java.math.BigInteger;
+import java.util.Scanner;
 
-string multiply( string a, int b )
+public class Main
 {
-    int carry = 0;
-    for( int i = 0; i < a.size(); i++ ) {
-        carry += (a[i] - 48) * b;
-        a[i] = ( carry % 10 + 48 );
-        carry /= 10;
-    }
-    while( carry ) {
-        a += ( carry % 10 + 48 );
-        carry /= 10;
-    }
-    return a;
-}
+    public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);
+        int t = in.nextInt();
+        int cas = 1;
 
-int main()
-{
+        while(t-->0)
+        {
+            int n = in.nextInt();
+
+            BigInteger result = in.nextBigInteger();
+            for(int i = 1; i<n; i++)
+            {
+                int a = in.nextInt();
+                result = lcm(result, BigInteger.valueOf(a));
+            }
+
+            System.out.println("Case " + cas +": " +result);
+            System.gc();
+            ++cas;
+
+        }
+
+    }
+    public static BigInteger lcm(BigInteger a, BigInteger b)
+    {
+        return a.multiply(b.divide(a.gcd(b)));
+    }
+
 }
