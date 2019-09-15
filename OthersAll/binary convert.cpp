@@ -25,9 +25,10 @@ int main()
     string b;
     while(cin>>n)
     {
-        b=Binary(n);
+        b = Binary(n);
         cout<<b<<endl;
-        b=bitset<32>(n).to_string();
+
+        b = bitset<32>(n).to_string();
         cout<<b<<endl;
     }
 }

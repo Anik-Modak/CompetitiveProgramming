@@ -1,15 +1,13 @@
-long long bigmod ( long long a, long long p, long long m )
+long long bigmod (ll a, ll p)
 {
-    long long res = 1;
-    long long x = a;
-
-    while ( p )
+    long long res = 1, x = a;
+    while (p)
     {
         if ( p & 1 )
         {
-            res = ( res * x ) % m;
+            res = ( res * x ) % mod;
         }
-        x = ( x * x ) % m;
+        x = ( x * x ) % mod;
         p = p >> 1;
     }
     return res;

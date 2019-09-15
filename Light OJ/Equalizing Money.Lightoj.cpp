@@ -10,7 +10,7 @@
 using namespace std;
 
 vector <int> adj[MX];
-map<pair<int,int>,int>
+map<pii,int>mp;
 bool vis[MX];
 
 void bfs(int source)
@@ -90,4 +90,5 @@ int main()
         else printf("Case %d: No\n",ca);
         clear(adj);
     }
+    return 0;
 }

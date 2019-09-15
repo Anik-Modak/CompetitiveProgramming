@@ -2,7 +2,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int k=0,a[100000000/32+31],p[5761500];;
+int k=0,a[100000000/32+31], p[5761500];
 unsigned int Mul[5761500];
 
 int on(int n,int pos)

@@ -1,0 +1,27 @@
+2
+10
+odd
+ one
+ prime
+  three
+  five
+ nine
+even
+ two
+ four
+ six
+
+13
+bcd
+ ab
+  abb
+  aba
+ bc
+  bcf
+  bcb
+ ba
+abc
+ ac
+  acd
+  adc
+ bd

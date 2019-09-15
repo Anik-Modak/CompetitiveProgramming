@@ -1,45 +1,53 @@
 //Anik_Modak
-#include<iostream>
-#include<stdio.h>
+#include<bits/stdc++.h>
+#define pii pair<int, int>
+#define INF 10000007
+#define MX 22
+using namespace std;
 
-int dist[MX][MX];
-void init(int V)
+int distance(pii a, pii b)
 {
-    for (int i = 1; i <= V; i++)
-    {
-        for (int j = 1; j <= V; j++)
-        {
-            if(i==j)
-                dist[i][j] = 0;
-            else
-                dist[i][j] = INF;
-        }
-    }
+    return abs(a.first-b.first) + abs(a.second-b.second);
 }
 
-double floydWarshall(int n)
+int totaldis(vector<pii> v)
 {
-    for (int k = 1; k <= n; ++k)
-    {
-        for (int i = 1; i <= n; ++i)
-        {
-            for (int j = 1; j <= n; ++j)
-            {
-                if (dist[i][k] < INF && dist[k][j] < INF)
-                    dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j]);
-
-            }
-        }
-    }
+    int sum = 0;
+    for(int i=1; i<v.size(); i++)
+        sum += distance(v[i-1], v[i]);
+    return sum;
 }
 
 int main()
 {
+    ios::sync_with_stdio(false);
     int t;
     cin>>t;
 
     while(t--)
     {
+        int n, m, sx, sy;
+        cin>>n>>m>>sx>>sy;
 
+        vector<pii>v;
+        int q, x, y;
+        cin>>q;
+
+        while(q--)
+        {
+            cin>>x>>y;
+            v.push_back({x,y});
+        }
+
+        int mn, len = v.size() - 1;
+        mn = distance(pii{sx,sy}, v[0]) + totaldis(v) + distance(pii{sx,sy}, v[len]);
+
+        while(next_permutation(v.begin(), v.end()))
+        {
+            int tmp = distance(pii{sx,sy}, v[0]) + totaldis(v) + distance(pii{sx,sy}, v[len]);
+            mn = min(mn, tmp);
+        }
+        cout<<"The shortest path has length "<<mn<<"\n";
     }
+    return 0;
 }

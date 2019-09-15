@@ -27,7 +27,7 @@ int main()
         ss<<n;
         string s=ss.str();
 
-        long long l=bitset<32>(s).to_ulong();
+        long long l = bitset<32>(s).to_ulong();
         cout<<l<<endl;
     }
 }

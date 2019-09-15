@@ -8,6 +8,7 @@ long long fn(string str)
     ss>>n;
     return n;
 }
+
 int main()
 {
     string s;

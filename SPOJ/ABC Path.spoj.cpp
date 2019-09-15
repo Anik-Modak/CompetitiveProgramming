@@ -1,6 +1,6 @@
 //Anik_Modak
 #include<bits/stdc++.h>
-#define MAX 50
+#define MAX 55
 #define mem(x,y) memset(x,y,sizeof(x));
 #define pii pair<int,int>
 using namespace std;
@@ -8,8 +8,8 @@ using namespace std;
 int dx[] = {1, -1 ,0, 0, -1, -1, 1, 1};
 int dy[] = {0, 0, 1, -1, -1, 1, -1, 1};
 
-char grid[MAX][MAX];
-int row, column, id=0;
+string grid[MAX];
+int row, column, id = 0;
 
 bool valid(int x, int y)
 {
@@ -20,8 +20,8 @@ bool valid(int x, int y)
 int dp[MAX][MAX];
 int dfs(int ux, int uy)
 {
-    if(dp[ux][uy] != -1)
-        return dp[ux][uy];
+    /*if(dp[ux][uy] != -1)
+        return dp[ux][uy];*/
 
     int mx = 0;
     for(int i=0; i<8; i++)
@@ -29,13 +29,11 @@ int dfs(int ux, int uy)
         int vx = ux + dx[i];
         int vy = uy + dy[i];
 
-        if(valid(vx, vy) && grid[vx][vy]==grid[ux][uy]+1)
+        cout<<grid[vx][vy]<<endl;
+        if(valid(vx, vy) && grid[vx][vy]==char(grid[ux][uy]+1))
             mx = max(mx, 1 + dfs(vx, vy));
-        else
-            return 0;
-        cout<<mx<<endl;
     }
-    return mx;
+    return dp[ux][uy] = mx;
 }
 
 int main()
@@ -49,9 +47,10 @@ int main()
         int ans = 0;
         mem(dp, -1);
 
+        cout<<dfs(0,0)<<endl;
         for(int i=0; i<row; i++)
             for(int j=0; j<column; j++)
-                ans = max(ans, dfs(i,j));
+               // ans = max(ans, dfs(i,j));
 
         cout<<ans<<endl;
     }

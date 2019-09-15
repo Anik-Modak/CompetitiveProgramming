@@ -2,10 +2,11 @@
 #include<iostream>
 #include<stdio.h>
 #include<string.h>
+#define eps 0.0000001
 using namespace std;
 
-int n, m, a[11][101];
-int dp[11][101];
+int n, m, a[12][102];
+int dp[12][102];
 
 int solve(int i, int h)
 {
@@ -25,6 +26,7 @@ int solve(int i, int h)
 
 int main()
 {
+    //freopen("input.txt", "r", stdin);
     int t;
     scanf("%d", &t);
 
@@ -50,7 +52,7 @@ int main()
         {
             memset(dp, -1, sizeof(dp));
             double ans = solve(1, m);
-            printf("Maximal possible average mark - %.2f\n",ans/n);
+            printf("Maximal possible average mark - %.2f.\n",eps+ans/n);
         }
     }
     return 0;

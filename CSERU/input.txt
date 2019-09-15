@@ -1,21 +1,13 @@
-2
+Hallo, dies ist eine
+ziemlich lange Zeile, die in Html
+aber nicht umgebrochen wird.
+<br>
+Zwei <br> <br> produzieren zwei Newlines.
+Es gibt auch noch das tag <hr> was einen Trenner darstellt.
+Zwei <hr> <hr> produzieren zwei Horizontal Rulers.
+Achtung       mehrere Leerzeichen irritieren
 
-2
-Sara Shahida
-Jaguar
-Jacob Holger
-Jaguar
-3
-Jacob Holger
-Sara Shahida
-Jacob Holger
+Html genauso wenig wie
 
-2
-Sara Shahida
-Jaguar
-Jacob Holger
-Jaguar
-2
-Jacob Holger
-Sara Shahida
-Sara Shahida
+
+mehrere Leerzeilen.

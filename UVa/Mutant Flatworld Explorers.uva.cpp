@@ -1,7 +1,7 @@
-#include<iostream>
-#include<stdio.h>
-#include<string.h>
-#define MX 105
+#include<bits/stdc++.h>
+#define pii pair<int, int>
+#define MX 103
+using namespace std;
 
 char direction(char x, char y)
 {
@@ -40,8 +40,10 @@ char direction(char x, char y)
 
 int main()
 {
+    //freopen("input.txt","r",stdin);
     int n, m;
-    freopen("input.txt","r",stdin);
+    map<pii, bool> mp;
+
     while(scanf("%d%d",&n,&m)==2)
     {
         int x, y;
@@ -66,18 +68,26 @@ int main()
                         ansx--;
                 }
 
-                if(abs(ansx-x)>n ||abs(ansy-y)>m || ansx<0 || ansy<0)
+                //printf("%d %d %c\n",ansx,ansy,dir);
+                if(ansx>n || ansy>m || ansx<0 || ansy<0)
                 {
-                    if(abs(ansx-x)>n)
+                    if(ansx>n)
                         ansx--;
-                    if(abs(ansy-y)>m)
+                    if(ansy>m)
                         ansy--;
-                    if(ansx < 0)
+                    if(ansx<0)
                         ansx++;
-                    if(ansy < 0)
+                    if(ansy<0)
                         ansy++;
-                    ck = 0;
-                    break;
+
+                    if(mp.find({ansx, ansy}) != mp.end())
+                           ck = 1;
+                    else
+                    {
+                        mp[{ansx, ansy}] = 1;
+                        ck = 0;
+                        break;
+                    }
                 }
             }
 

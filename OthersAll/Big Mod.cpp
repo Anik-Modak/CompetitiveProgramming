@@ -18,6 +18,7 @@ long long bigmod(long long b,long long p,long long m)
         return (h*h)%m;
     }
 }
+
 int main()
 {
     long long b,p,m,ans;
