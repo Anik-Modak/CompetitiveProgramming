@@ -1,27 +1,16 @@
-2
-10
-odd
- one
- prime
-  three
-  five
- nine
-even
- two
- four
- six
+1
+7 13 3 5 10
+1 2
+1 6
+1 7
+2 6
+2 3
+6 7
+3 6
+3 4
+4 5
+7 8
+8 9
+8 5
+9 5
 
-13
-bcd
- ab
-  abb
-  aba
- bc
-  bcf
-  bcb
- ba
-abc
- ac
-  acd
-  adc
- bd

@@ -69,7 +69,7 @@ int main()
         adj[b].push_back({a,c});
     }
 
-    Dist.assign(n+1,INF);
+    Dist.assign(n+1, INF);
     par.assign(n+1, -1);
 
     if(dijkstra(1,n)==-1) cout<<-1<<endl;
