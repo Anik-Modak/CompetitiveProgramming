@@ -3,7 +3,7 @@
 using namespace std;
 
 string str;
-int dp[105][15], n;
+int dp[105][11], n;
 
 int solve(int i, int r)
 {
@@ -20,7 +20,8 @@ int solve(int i, int r)
         {
             if(i==0 && j==0)
                 continue;
-            int tmp = (r*10+j) % 6;
+
+            int tmp = (r*10 + j) % 6;
             ck = solve(i+1, tmp);
             if(ck)
             {
@@ -55,6 +56,7 @@ int main()
             cout<<str<<"\n";
         else
             cout<<"-1\n";
+        str.clear();
     }
     return 0;
 }
